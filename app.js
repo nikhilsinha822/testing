@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyparser = require("body-parser")
 
+const hostname= "0.0.0.0";
 const app = express();
 
 app.set('view engine','ejs');
@@ -17,6 +18,6 @@ app.get("/product",(req,res)=>{
     res.render("product");
 })
 
-app.listen(3000,()=>{
+app.listen(3000, hostname,()=>{
     console.log("Server in running");
 })
