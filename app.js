@@ -18,6 +18,6 @@ app.get("/product",(req,res)=>{
     res.render("product");
 })
 
-app.listen(3000, hostname,()=>{
+app.listen(8000, hostname,()=>{
     console.log("Server in running");
 })
